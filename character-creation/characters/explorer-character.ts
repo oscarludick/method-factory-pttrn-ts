@@ -1,14 +1,14 @@
 import { Character } from "./character";
 
-export class KnightCharacter extends Character {
+export class ExplorerCharacter extends Character {
   constructor(name: string) {
     super();
 
     this.name = name;
-    this.face = "European";
-    this.body = "Average";
-    this.build = "Knight";
+    this.face = "Asian";
+    this.body = "Thin";
+    this.build = "Explorer";
 
-    this.startingItems.push("LifeGem", "Shield", "Sword");
+    this.startingItems.push("Potion", "Stamina Amulet", "Bow");
   }
 }
