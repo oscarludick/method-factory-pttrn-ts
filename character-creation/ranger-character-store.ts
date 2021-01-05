@@ -5,7 +5,7 @@ import { ExplorerCharacter } from "./characters/explorer-character";
 export class RangerCharacterStore extends CharacterStore {
   createCharacter(classType: string, name: string): Character {
     switch (classType) {
-      case "Explorer":
+      case "explorer":
         return new ExplorerCharacter(name);
       default:
         return null;

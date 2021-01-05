@@ -23,8 +23,8 @@ export abstract class Character {
   }
 
   description(): string {
-    return `Character ${name}: ${this.build} with ${this.face} and ${
-      this.body
-    }`;
+    return `Character ${this.name} is an ${this.build} with ${
+      this.face
+    } face and ${this.body} body`;
   }
 }

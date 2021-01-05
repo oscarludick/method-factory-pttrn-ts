@@ -6,6 +6,7 @@ export abstract class CharacterStore {
     character.createFace();
     character.createBody();
     character.selectBuild();
+    character.makeCharacter();
     return character;
   }
 
