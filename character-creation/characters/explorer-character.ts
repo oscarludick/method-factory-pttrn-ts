@@ -5,5 +5,10 @@ export class KnightCharacter extends Character {
     super();
 
     this.name = name;
+    this.face = "European";
+    this.body = "Average";
+    this.build = "Knight";
+
+    this.startingItems.push("LifeGem", "Shield", "Sword");
   }
 }
