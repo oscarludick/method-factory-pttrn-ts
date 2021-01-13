@@ -1,7 +1,6 @@
-import { CharacterFactory } from "./character-creation/character-store";
+import { CharacterFactory } from "./character-creation/character-factory";
 
 import { Character } from "./character-creation/characters/character";
-
 import { MeleeCharacterFactory } from "./character-creation/melee-character-factory";
 import { RangerCharacterFactory } from "./character-creation/ranger-character-factory";
 
