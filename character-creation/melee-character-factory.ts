@@ -1,8 +1,9 @@
-import { CharacterStore } from "./character-store";
+import { CharacterFactory } from "./character-factory";
+
 import { Character } from "./characters/character";
 import { KnightCharacter } from "./characters/knight-character";
 
-export class MeleeCharacterStore extends CharacterStore {
+export class MeleeCharacterFactory extends CharacterFactory {
   createCharacter(classType: string, name: string): Character {
     switch (classType) {
       case "knight":

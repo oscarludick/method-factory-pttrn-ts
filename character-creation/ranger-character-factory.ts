@@ -1,8 +1,9 @@
-import { CharacterStore } from "./character-store";
+import { CharacterFactory } from "./character-factory";
+
 import { Character } from "./characters/character";
 import { ExplorerCharacter } from "./characters/explorer-character";
 
-export class RangerCharacterStore extends CharacterStore {
+export class RangerCharacterFactory extends CharacterFactory {
   createCharacter(classType: string, name: string): Character {
     switch (classType) {
       case "explorer":
