@@ -4,13 +4,13 @@ import { CharacterFactory } from "./character-creation/character-factory";
 import { MeleeCharacterFactory } from "./character-creation/melee-character-factory";
 import { RangerCharacterFactory } from "./character-creation/ranger-character-factory";
 
-const meleeStore: CharacterFactory = new MeleeCharacterFactory();
-const rangerStore: CharacterFactory = new RangerCharacterFactory();
+const meleeCharacter: CharacterFactory = new MeleeCharacterFactory();
+const rangerCharacter: CharacterFactory = new RangerCharacterFactory();
 
-const knight: Character = meleeStore.customizeCharacter("knight", "Ignus");
+const knight: Character = meleeCharacter.customizeCharacter("knight", "Ignus");
 console.log(knight.description());
 
-const explorer: Character = rangerStore.customizeCharacter(
+const explorer: Character = rangerCharacter.customizeCharacter(
   "explorer",
   "Robert"
 );
