@@ -45,7 +45,7 @@ export class CharacterCreator {
 
 A factory method handles object creation and encapsulates it in a subclass. This decouples the client code in the superclass from the object creation code in the subclass.
 
-The factory method pattern defines an interface for creating an object, but lets subclasses decide witch class to instantiate. Factory method lets a class defer instantiation to subclasses.
+The factory method pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory method lets a class defer instantiation to subclasses.
 
 ### In resume
 
@@ -107,7 +107,7 @@ export class KnightCharacter extends Character {
 }
 ```
 
-It's time to create the Characters without knowledge of witch Character will be created.
+The CharacterCreator has no knowledge of which Character will be created.
 
 ```ts
 export abstract class CharacterCreator {
