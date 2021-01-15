@@ -8,5 +8,32 @@ If your code is written to an interface, then it will work with any new classes 
 
 We take what varies and encapsulate it to create new objects, this is called a Factory. Factories handles the details of object creation.
 
+### The Simple Factory
+
+The simple factory is not actually a desing pattern, it's more of a programming idiom. But is commonly used.
+
+Example simple factory: 
+
+```ts
+export class CharacterCreationFactory {
+  createCharacter(classType: string): Character {
+    if (classType.equals("knight")) {
+      return new KnightCharacter();
+    }
+  }
+}
+
+export class CharacterCreator {
+  private _characterFactory: CharacterCreationFactory;
+  constructor(characterFactory: CharacterCreationFactory) {
+    this._characterFactory = characterFactory;
+  }
+
+  customizeCharacter(classType: string) {
+    const character: Character = this._characterFactory.createCharacter(classType);
+    //do stuff...
+  } 
+}
+```
 
 

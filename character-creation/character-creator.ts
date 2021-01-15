@@ -1,6 +1,6 @@
 import { Character } from "./characters/character";
 
-export abstract class CharacterFactory {
+export abstract class CharacterCreator {
   customizeCharacter(classType: string, name: string): Character {
     const character = this.createCharacter(classType, name);
     character.createFace();
