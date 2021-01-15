@@ -140,7 +140,7 @@ export class MeleeCharacterFactory extends CharacterCreator {
 }
 ```
 
-The result
+The result.
 
 ```ts
 const meleeCharacter: CharacterCreator = new MeleeCharacterFactory();
