@@ -1,4 +1,4 @@
-# Method Factory Pattern
+# Factory Method Pattern
 
 The following text was obtained from the book [Head First Desing Patterns](https://www.amazon.com/-/es/Eric-Freeman/dp/0596007124).
 
