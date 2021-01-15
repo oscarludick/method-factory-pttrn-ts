@@ -39,7 +39,7 @@ export class CharacterCreator {
 ```
 
 #### Note
-> In design patterns, the phrase "implement an interface" does NOT always mean "write a class that implements a OO interface, by using the 'implements' keyword in the class declaration". In the general use of the phrase, a concrate class implementing a method from a supertype (wich could be a class OR interface) is still considered to be "implementing the interface" of a supertype.
+> In design patterns, the phrase "implement an interface" does NOT always mean "write a class that implements a OO interface, by using the 'implements' keyword in the class declaration". In the general use of the phrase, a concrate class implementing a method from a supertype (which could be a class OR interface) is still considered to be "implementing the interface" of a supertype.
 
 ### The factory method pattern, allowing subclasses to decide
 
@@ -51,7 +51,7 @@ The factory method pattern defines an interface for creating an object, but lets
 
 All factory patterns encapsulate object creation. The Factory Method Pattern encapsulates object creation by letting subclasses decide what objects to create.
 
-The factory method lets subclasses decide wich class to instantiate. They say "decide" not because the pattern allows subclasses themselves to decide at runtime, but because the creator class is written without knowledge of the actual products that will be created, wich is decided purely by the choice of the subclass that is used.
+The factory method lets subclasses decide which class to instantiate. They say "decide" not because the pattern allows subclasses themselves to decide at runtime, but because the creator class is written without knowledge of the actual products that will be created, which is decided purely by the choice of the subclass that is used.
 
 ### The Character-Creation Example
 
@@ -125,7 +125,7 @@ export abstract class CharacterCreator {
 
 ```
 
-Then the subclass that is responsible for decide wich Character create. 
+Then the subclass that will decide which Character create. 
 
 ```ts
 export class MeleeCharacterFactory extends CharacterCreator {
